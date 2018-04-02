@@ -1,4 +1,4 @@
 FROM node:latest
 
-RUN apk add --no-cache py-pip gettext
-RUN pip install docker-compose awscli
+RUN apt-get update && apt-get install -y python python-pip python-dev
+RUN pip install awscli
